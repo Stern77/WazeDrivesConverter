@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waze Drives Converter Webservice Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <h1 class="title">Waze Drives Converter Tool</h1>
+    <div class="card">
+        <p id="message">This applet will take a file you select with drives from the Waze personal data archive (which you can export from waze) and convert it into a GPX file showing your routes.
+            See <a href="https://support.google.com/waze/answer/9002354?hl=en">this link</a> for more information about this data.
+            <br/>
+            The idea to convert the data into GPX is taken from <a href="https://www.waze.com/forum/viewtopic.php?t=261936">this waze discussion post</a> 
+            <br/>
+            This software does not upload your data to the server. It just converts it in the memory of your web browser.
+            <br/>
+            This software is published under MIT license, so it is open source and free of charge. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+            Read license text on repository page for further details.
+        </p>
+        <input type="file" id="file-selector">
+        <p id="status">
+            Please choose the file account_activity_3.csv
+        </p>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    /* <script type="text/javascript" src="js/gpxmake.min.js"></script></> */
+    <script src="gpxmake.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
